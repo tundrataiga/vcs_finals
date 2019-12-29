@@ -32,9 +32,29 @@ background-image: linear-gradient(to right, #faffd1 , #a1ffce);
     right: 0px;
 }
 
+.top-menu{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.left-menu{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;  
+}
+
 .right-menu {
     position: absolute;
-    left: 94%;
+    right: 30px;
     top: 50%;
     transform: translate(0, -50%);
     list-style-type: none;
@@ -43,16 +63,21 @@ background-image: linear-gradient(to right, #faffd1 , #a1ffce);
     font-size: 0;
 }
 
-.right-menu li {
+.top-menu li {
+    display: inline;
+    padding: 0 7px 0 0;
+}
+
+.right-menu li, .left-menu li {
     padding: 0 0 7px 0;
     margin: 0;
 }
 
 
-.right-menu li img {
+.right-menu li img, .left-menu li img, .top-menu li img {
     width: 20px;
 }
 
-#last-li-right {
+#last-li-right, #last-li-left, #last-li-top {
     padding: 0;
 }
