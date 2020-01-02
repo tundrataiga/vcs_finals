@@ -56,7 +56,7 @@
         
         </div> 
        
-        <!-- <img id="lotosas" src="images/lotos.png" alt="meditacija"> -->
+        <img id="lotosas" src="images/lotos.png" alt="meditacija">
 
 
             

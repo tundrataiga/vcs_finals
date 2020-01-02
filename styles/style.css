@@ -27,7 +27,8 @@ overflow: hidden;
 .slider {
     position: absolute;
     background-color: none;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: 65%;
     height: 90%;
     top: 0;
@@ -56,6 +57,7 @@ overflow: hidden;
     width: 90%;
     right: 0px;
     z-index: 20;
+    pointer-events:none;
 }
 
 .right-menu {
