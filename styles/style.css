@@ -21,21 +21,50 @@ body {
 .right {
 position: relative;
 flex-grow: 2;
+overflow: hidden;
 }
 
-.background-pic {
+.slider {
+    position: absolute;
+    background-color: none;
+    overflow: scroll;
     width: 65%;
     height: 90%;
-    position: absolute;
     top: 0;
     left: 10%;
-    background-image: linear-gradient(to right, #ffdde1 , #ee9ca7);
+    scroll-snap-type: y mandatory;
+} 
+
+.bg-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+    margin-bottom: 50px;
+    scroll-snap-align: start;
 }
+
+#img1 { background-image: linear-gradient(to right, #ffdde1 , #ee9ca7); }
+#img2 { background-image: url(../images/space.jpg); }
+#img3 { background-image: url(../images/antarctica.jpg); }
+#img4 { background-image: url(../images/vilnius.jpg); }
+#img5 { background-image: url(https://picsum.photos/500); }
 
 #lotosas {
     position: absolute;
     width: 90%;
     right: 0px;
+    z-index: 20;
+}
+
+.right-menu {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
 }
 
 .top-menu{
@@ -58,49 +87,28 @@ flex-grow: 2;
     font-size: 0;  
 }
 
-.vertical-line {
-    
-    position: absolute;
-    right: 0;
-    top: 25%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    cursor: default;
-}
-
-.vertical-line li {
-   font-family: 'Catamaran', sans-serif;
-    font-size: 22px; 
-}
-
-.right-menu {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translate(0, -50%);
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-}
-
 .top-menu li {
     display: inline;
-    padding: 0 7px 0 0;
+    margin: 0 7px 0 0;
 }
 
-.right-menu li, .left-menu li {
-    padding: 0 0 7px 0;
-    margin: 0;
+.left-menu li {
+    margin: 0 0 7px 0;
 }
 
-
-.right-menu li img, .left-menu li img, .top-menu li img {
+.left-menu li img, .top-menu li img {
     width: 20px;
 }
 
-#last-li-right, #last-li-left, #last-li-top {
-    padding: 0;
+#last-a-right, #last-li-left, #last-li-top, #img5 {
+    margin: 0;
 }
+
+.right-menu a {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 2px solid #ffaca1;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+  }
