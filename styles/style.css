@@ -52,12 +52,18 @@ overflow: hidden;
 #img4 { background-image: url(../images/vilnius.jpg); }
 #img5 { background-image: url(../images/faraway.jpg); }
 
-#lotosas {
-    position: absolute;
+.overlay-img {
+   position: absolute;
     width: 90%;
-    right: 0px;
-    z-index: 20;
+    right: 0px; 
     pointer-events:none;
+    overflow: hidden;
+}
+
+#lotosas-1, #lotosas-2, #lotosas-3, #lotosas-4, #lotosas-5 {
+    width: 100%;
+    position: absolute;
+    
 }
 
 .right-menu {

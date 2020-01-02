@@ -55,8 +55,15 @@
                 <div class="bg-image" id="img5"></div>
         
         </div> 
+        <div class="overlay-img">
        
-        <img id="lotosas" src="images/lotos.png" alt="meditacija">
+        <img id="lotosas-1" src="images/lotos.png">
+        <img id="lotosas-2" src="images/lotos_2.png">
+        <img id="lotosas-3" src="images/lotos_3.png">
+        <img id="lotosas-4" src="images/lotos_4.png">
+        <img id="lotosas-5" src="images/lotos_5.png">
+    
+        </div>
 
 
             
