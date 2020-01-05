@@ -45,7 +45,7 @@
                     <a href="#img4"></a>
                     <a id="last-a-right" href="#img5"></a>
         </div> 
-
+<div class="slider-wrapper">
         <div class="slider">
 
                 <div class="bg-image" id="img1"></div>
@@ -55,6 +55,7 @@
                 <div class="bg-image" id="img5"></div>
         
         </div> 
+    </div>
         <div class="overlay-img">
        
         <img id="lotosas-1" src="images/lotos.png">

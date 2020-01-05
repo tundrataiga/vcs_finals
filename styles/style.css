@@ -24,15 +24,22 @@ flex-grow: 2;
 overflow: hidden;
 }
 
-.slider {
-    position: absolute;
-    background-color: none;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 65%;
+.slider-wrapper {
+   position: absolute; 
+   width: 65%;
     height: 90%;
     top: 0;
     left: 10%;
+    overflow: hidden;
+}
+
+.slider {
+    
+    background-color: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% + 18px);
+    height: calc(100% + 18px);
     scroll-snap-type: y mandatory;
 } 
 
@@ -57,12 +64,15 @@ overflow: hidden;
     width: 90%;
     right: 0px; 
     pointer-events:none;
-    overflow: hidden;
-}
+ 
+} 
 
 #lotosas-1, #lotosas-2, #lotosas-3, #lotosas-4, #lotosas-5 {
     width: 100%;
     position: absolute;
+    display: none;
+    z-index: 50;
+
     
 }
 
