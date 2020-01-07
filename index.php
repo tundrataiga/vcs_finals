@@ -11,9 +11,73 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="background">
-        <div class="left"> 
-                 <ul class="top-menu">
+<div class="fixed-frame">  
+
+          <!-- flip-img konteineris -->
+           <div class="kt-container"> 
+
+
+            <!-- img aktyvi -->
+            <div class="kintamasis  kintamasis-active">
+              <div class="kintamasis-content">
+                <div class="lotos"><img src="images/lotos_5.png" alt=""></div>
+              </div>
+            </div>   
+            <!-- img aktyvi/uždaryta -->
+           
+            <!-- img neaktyvi -->
+             <div class="kintamasis">
+              <div class="kintamasis-content"> 
+                <div class="lotos"><img id="img" src="images/lotos_2.png" alt=""></div>
+              </div>
+            </div>
+            <!-- img neaktyvi/uždaryta -->
+
+
+
+
+           <!--  <div class="kintamasis">
+                <div class="kintamasis-content"> 
+                  <div class="logo"><img src="images/lotos_3.png" alt=""></div>
+                </div>
+              </div>
+              <div class="kintamasis">
+                  <div class="kintamasis-content"> 
+                    <div class="logo"><img src="images/lotos_4.png" alt=""></div>
+                  </div>
+                </div> 
+                <div class="kintamasis">
+                    <div class="kintamasis-content"> 
+                      <div class="logo"><img src="images/lotos_5.png" alt=""></div>
+                    </div>
+                  </div>  -->  
+            
+            
+
+
+           </div> 
+          <!-- flip-img konteineris/uždarytas -->
+
+
+          </div>
+      
+        <div class="scroll">
+
+          <div class="section-1  section"></div>
+          
+          <div class="section-2  section  section-bg"></div>
+          
+          <div class="section-3  section"></div>
+          
+           <div class="section-4  section section-bg"></div>
+          
+          <div class="section-5  section"></div> 
+
+        </div>
+
+
+
+<!--     <ul class="top-menu">
                         <li><img src="images/button_small.png" alt=""></li>
                         <li><img src="images/button_small.png" alt=""></li>
                         <li><img src="images/button_small.png" alt=""></li>
@@ -24,46 +88,16 @@
                         <li><img src="images/button_small.png" alt=""></li>
                         <li><img src="images/button_small.png" alt=""></li>
                         <li id="last-li-left"><img src="images/button_small.png" alt=""></li>
-                </ul> 
-         
-            </div>               
-        
-    <div class="right">
-        
-       <div class="right-menu">
+                </ul>  -->
+
+<!--        <div class="right-menu">
                     <a href="#img1"></a>
                     <a href="#img2"></a>
                     <a href="#img3"></a>
                     <a href="#img4"></a>
                     <a id="last-a-right" href="#img5"></a>
-        </div> 
-<div class="slider-wrapper">
-        <div class="slider">
-                <div class="bg-image" id="img1"></div>
-                <div class="bg-image" id="img2"></div>
-                <div class="bg-image" id="img3"></div>
-                <div class="bg-image" id="img4"></div>
-                <div class="bg-image" id="img5"></div>
-        
-        </div> 
-    </div>
-        <div class="overlay-img">
-       
-        <img id="lotosas-1" src="images/lotos.png">
-        <img id="lotosas-2" src="images/lotos_2.png">
-        <img id="lotosas-3" src="images/lotos_3.png">
-        <img id="lotosas-4" src="images/lotos_4.png">
-        <img id="lotosas-5" src="images/lotos_5.png">
-    
-        </div>
-            
-       
-            
-            
-        </div>
-    </div>
-    
-    </div>
+        </div>  -->
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
