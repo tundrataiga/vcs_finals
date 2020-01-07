@@ -1,160 +1,132 @@
-
-:root {
-    --replace-offset: 50%;
-    --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
-  }
-
-  * {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-  .body {
-      margin: 0;
-  }
-  
+body {
+  margin: 0;
+}
 
-  .fixed-frame {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    text-align: right;
-  }
+.background {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 
-  .logo img {
-      width: 60%;
-  }
-  
-  .section {
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.left {
+  position: relative;
+  flex-grow: 1;
+}
 
-    .section-1 {background-image: linear-gradient(to right, #ffdde1 , #ee9ca7);}
-    .section-2 {background-image: url(../images/space.jpg);}
-    .section-3 {background-image: url(../images/antarctica.jpg);}
-    .section-4 {background-image: url(../images/vilnius.jpg);}
-    .section-5 {background-image: url(../images/faraway.jpg);}
- 
-  
-  /* align content above each other without absolute */
-  .kt-container {
-    display: grid;
-    
-  }
-  
-  .kintamasis {
-    grid-row: -1 / 1;
-    grid-column: -1 / 1; 
-    overflow: hidden;
-    will-change: transform;
-    right: 0;
-  }
-  
-  /* item to replace with */
-  .kintamasis {
-    transform: translateY(calc(var(--replace-offset) * 1));  
-  }
+.right {
+position: relative;
+flex-grow: 2;
+overflow: hidden;
+}
 
-  .kintamasis-content {
-    /* fixes problem with calculating correct height in js */
-    border: 1px solid transparent; 
-    will-change: transform;
-  
-    transform: translateY(calc(var(--replace-offset) * -1));
-  }
-  
-  /* previous replace item*/
-  .kintamasis-active {
-    transform: translateY(calc(var(--replace-offset-2) * 1));  
-  }
-  .kintamasis-active .kintamasis-content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));  
-  }
-  
-  
-  /* REVERSE ANIMATION */
-  .kintamasis--reverse 
-  .kintamasis {
-    transform: translateY(calc(var(--replace-offset-2) * 1));  
-  }
-  .kintamasis--reverse 
-  .kintamasis-content {
-    transform: translateY(calc(var(--replace-offset-2) * -1));
-  }
-  
-  /* previous replace item*/
-  .kintamasis--reverse 
-  .kintamasis-active {
-    transform: translateY(calc(var(--replace-offset) * 1));  
-  }
-  .kintamasis--reverse 
-  .kintamasis-active .kintamasis-content {
-    transform: translateY(calc(var(--replace-offset) * -1));
-  }
+.slider-wrapper {
+ position: absolute; 
+ width: 65%;
+  height: 90%;
+  top: 0;
+  left: 10%;
+  overflow: hidden;
+}
 
-/* .right-menu {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: flex;
-    flex-direction: column;
+.slider {
+  
+  background-color: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+  scroll-snap-type: y mandatory;
+} 
+
+.bg-image {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-snap-align: start;
+  margin-bottom: 50px;
+  scroll-snap-align: start;
+}
+
+#img1 { background-image: linear-gradient(to right, #ffdde1 , #ee9ca7); }
+#img2 { background-image: url(../images/space.jpg); }
+#img3 { background-image: url(../images/antarctica.jpg); }
+#img4 { background-image: url(../images/vilnius.jpg); }
+#img5 { background-image: url(../images/faraway.jpg); }
+
+.overlay-img {
+ position: absolute;
+  width: 90%;
+  right: 0px; 
+  pointer-events:none;
+
+} 
+
+#lotosas-1, #lotosas-2, #lotosas-3, #lotosas-4, #lotosas-5 {
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 50;
+
+  
+}
+
+.right-menu {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
 }
 
 .top-menu{
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
 .left-menu{
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;  
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;  
 }
 
 .top-menu li {
-    display: inline;
-    margin: 0 7px 0 0;
+  display: inline;
+  margin: 0 7px 0 0;
 }
 
 .left-menu li {
-    margin: 0 0 7px 0;
+  margin: 0 0 7px 0;
 }
 
 .left-menu li img, .top-menu li img {
-    width: 20px;
+  width: 20px;
 }
 
-#last-a-right, #last-li-left, #last-li-top {
-    margin: 0;
+#last-a-right, #last-li-left, #last-li-top, #img5 {
+  margin: 0;
 }
 
 .right-menu a {
-    width: 20px;
-    height: 20px;
-    background: none;
-    border: 2px solid #ffaca1;
-    border-radius: 50%;
-    margin: 0 0 10px 0;
-  } */
-
-
-
- 
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: 2px solid #ffaca1;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+}

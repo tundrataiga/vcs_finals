@@ -11,61 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="fixed-frame">  
-          <!-- replace content -->
-           <div class="kt-container"> 
-            <!-- item to replace -->
-            <div class="kintamasis  kintamasis-active">
-              <div class="kintamasis-content">
-                <div class="logo"><img src="images/lotos_5.png" alt=""></div>
-              </div>
-            </div>   
-            <!-- end item to replace -->
-           
-            <!-- item to replace with -->
-             <div class="kintamasis">
-              <div class="kintamasis-content"> 
-                <div class="logo"><img id="img" src="images/lotos_2.png" alt=""></div>
-              </div>
-            </div>
-           <!--  <div class="kintamasis">
-                <div class="kintamasis-content"> 
-                  <div class="logo"><img src="images/lotos_3.png" alt=""></div>
-                </div>
-              </div>
-              <div class="kintamasis">
-                  <div class="kintamasis-content"> 
-                    <div class="logo"><img src="images/lotos_4.png" alt=""></div>
-                  </div>
-                </div> 
-                <div class="kintamasis">
-                    <div class="kintamasis-content"> 
-                      <div class="logo"><img src="images/lotos_5.png" alt=""></div>
-                    </div>
-                  </div>  -->  
-            
-            <!-- end item to replace with -->
-           </div> 
-          <!-- end replace content -->
-          </div>
-      
-        <main class="main">
-          <div class="section-1  section">
-          </div>
-          
-          <div class="section-2  section  section-bg">     
-          </div>
-          
-          <div class="section-3  section">
-          </div>
-          
-           <div class="section-4  section section-bg">     
-           </div>
-          
-          <div class="section-5  section">
-          </div> 
-        </main>
-<!--     <div class="background">
+    <div class="background">
         <div class="left"> 
                  <ul class="top-menu">
                         <li><img src="images/button_small.png" alt=""></li>
@@ -117,7 +63,7 @@
         </div>
     </div>
     
-    </div> -->
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
