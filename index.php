@@ -13,6 +13,31 @@
 <body>
 <div class="fixed-frame">  
 
+
+        <div class="right-menu">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a id="last-a-right" href="#"></a>
+        </div>  
+
+        <div class="top-menu">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a id="last-a-top" href="#"></a>
+        </div>
+
+        <div class="left-menu">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a id="last-a-left" href="#"></a>
+        </div>  
+
+
+
           <!-- flip-img konteineris -->
            <div class="kt-container"> 
 
@@ -59,44 +84,21 @@
           <!-- flip-img konteineris/uždarytas -->
 
 
-          </div>
+    </div>
       
         <div class="scroll">
 
-          <div class="section-1  section"></div>
+          <div class="section-1  section" id="color-bg"></div>
           
-          <div class="section-2  section  section-bg"></div>
+          <div class="section-2  section  section-bg" id="space-bg"></div>
           
-          <div class="section-3  section"></div>
+          <div class="section-3  section" id="antarctica-bg"></div>
           
-           <div class="section-4  section section-bg"></div>
+           <div class="section-4  section section-bg" id="vilnius-bg"></div>
           
-          <div class="section-5  section"></div> 
+          <div class="section-5  section" id="island-bg"></div> 
 
         </div>
-
-
-
-<!--     <ul class="top-menu">
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li id="last-li-top"><img src="images/button_small.png" alt=""></li>
-                    </ul>
-                <ul class="left-menu">
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li><img src="images/button_small.png" alt=""></li>
-                        <li id="last-li-left"><img src="images/button_small.png" alt=""></li>
-                </ul>  -->
-
-<!--        <div class="right-menu">
-                    <a href="#img1"></a>
-                    <a href="#img2"></a>
-                    <a href="#img3"></a>
-                    <a href="#img4"></a>
-                    <a id="last-a-right" href="#img5"></a>
-        </div>  -->
 
     <script src="scripts/script.js"></script>
 </body>
