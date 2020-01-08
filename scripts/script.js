@@ -1,4 +1,6 @@
 
+// document.getElementById("img").style.backgroundColor = "#FFFFFF";
+
 var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60) };
 var lastPosition = -1; 
 function loop(){   // scroll funkcija
@@ -35,6 +37,7 @@ function loop(){   // scroll funkcija
 
       if ( currentSection ) {  //jei turi
         replaceContainer[0].classList.remove('kintamasis--reverse'); // -klasė
+
       } else {
         replaceContainer[0].classList.add('kintamasis--reverse') // +klasė
       }
@@ -88,3 +91,20 @@ function hideAll(exceptMe) {
     $(this).show();
   });
 } */
+
+//smooth scroll
+$(document).ready(function(){
+  $(".right-menu a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, .scroll').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+

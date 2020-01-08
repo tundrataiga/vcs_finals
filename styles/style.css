@@ -23,7 +23,7 @@ body {
 }
 
 .right-menu {
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 50%;
   transform: translate(0, -50%);
@@ -38,43 +38,54 @@ body {
   border: 2px solid #f1574d;
   border-radius: 50%;
   margin: 0 0 10px 0;
+  cursor: pointer;
+
 } 
 
-.top-menu a {
-  margin: 0 10px 0 0;
+.button:hover, .active {
+background-color: #0e0809;
+}
+
+.top-menu a, .left-menu a {
+ -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 2s; 
+}
+
+.top-menu a:hover, .left-menu a:hover {
+  width: 60px;
+  height: 60px;
 }
 
 .top-menu{
-  position: absolute;
+  position: fixed;
   left: 30px;
   top: 30px;
   display: flex;
 }
 
 .left-menu{
-  position: absolute;
+  position: fixed;
   left: 30px;
   bottom: 30px;
   display: flex;
   flex-direction: column; 
 }
 
-.top-menu li {
+.top-menu a {
   display: inline;
-  margin: 0 7px 0 0;
+  margin: 0 10px 0 0;
 }
 
-.left-menu li {
-  margin: 0 0 7px 0;
+.left-menu a {
+  margin: 0 0 10px 0;
 }
-
 
 #last-a-right, #last-a-left, #last-a-top {
   margin: 0;
 }
 
 .lotos img {
-    width: 60%;
+  width: 60%;
 }
 
 .section {

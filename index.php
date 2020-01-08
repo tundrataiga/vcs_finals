@@ -14,33 +14,12 @@
 <div class="fixed-frame">  
 
 
-        <div class="right-menu">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a id="last-a-right" href="#"></a>
-        </div>  
-
-        <div class="top-menu">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a id="last-a-top" href="#"></a>
-        </div>
-
-        <div class="left-menu">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a id="last-a-left" href="#"></a>
-        </div>  
+ 
 
 
 
           <!-- flip-img konteineris -->
            <div class="kt-container"> 
-
 
             <!-- img aktyvi -->
             <div class="kintamasis  kintamasis-active">
@@ -88,15 +67,37 @@
       
         <div class="scroll">
 
-          <div class="section-1  section" id="color-bg"></div>
+        <div class="right-menu menu">
+                    <a class="button" href="#section-1"></a>
+                    <a class="button active" href="#section-2"></a>
+                    <a class="button" href="#section-3"></a>
+                    <a class="button" href="#section-4"></a>
+                    <a class="button" id="last-a-right" href="#section-5"></a>
+        </div>  
+
+        <div class="top-menu menu">
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a id="last-a-top"></a>
+        </div>
+
+        <div class="left-menu menu">
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a id="last-a-left"></a>
+        </div> 
+
+          <div id="section-1" class="section-1  section" id="color-bg"></div>
           
-          <div class="section-2  section  section-bg" id="space-bg"></div>
+          <div id="section-2" class="section-2  section  section-bg" id="space-bg"></div>
           
-          <div class="section-3  section" id="antarctica-bg"></div>
+          <div id="section-3" class="section-3  section" id="antarctica-bg"></div>
           
-           <div class="section-4  section section-bg" id="vilnius-bg"></div>
+           <div id="section-4" class="section-4  section section-bg" id="vilnius-bg"></div>
           
-          <div class="section-5  section" id="island-bg"></div> 
+          <div id="section-5" class="section-5  section" id="island-bg"></div> 
 
         </div>
 
