@@ -42,7 +42,7 @@ body {
 
 } 
 
-.button:hover, .active {
+.button:hover, .right-menu .active {
 background-color: #0e0809;
 }
 
@@ -52,8 +52,8 @@ background-color: #0e0809;
 }
 
 .top-menu a:hover, .left-menu a:hover {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
 }
 
 .top-menu{

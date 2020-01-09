@@ -68,18 +68,23 @@
         <div class="scroll">
 
         <div class="right-menu menu">
-                    <a class="button" href="#section-1"></a>
-                    <a class="button active" href="#section-2"></a>
-                    <a class="button" href="#section-3"></a>
-                    <a class="button" href="#section-4"></a>
-                    <a class="button" id="last-a-right" href="#section-5"></a>
+                    <a class="right-button active" href="#section-1"></a>
+                    <a class="right-button" href="#section-2"></a>
+                    <a class="right-button" href="#section-3"></a>
+                    <a class="right-button" href="#section-4"></a>
+                    <a class="right-button" id="last-a-right" href="#section-5"></a>
         </div>  
 
         <div class="top-menu menu">
-                    <a></a>
-                    <a></a>
-                    <a></a>
-                    <a id="last-a-top"></a>
+
+        <audio class="top-audio" id="WN" src="audio/WN.mp3" preload="auto" type="audio/mpeg" loop></audio>
+        <audio class="top-audio" id="Purr" src="audio/PURR.mp3" preload="auto" type="audio/mpeg" loop></audio>
+        <audio class="top-audio" id="Svirpliai" src="audio/svirpliai.mp3" preload="auto" type="audio/mpeg" loop></audio>
+        <audio class="top-audio" id="Chant" src="audio/Chant.mp3" preload="auto" type="audio/mpeg" loop></audio>
+                    <a class="top-button active-top-button" id="a-wn" onclick="play('WN')"></a>
+                    <a class="top-button" id="a-purr" onclick="play('Purr')"></a>
+                    <a class="top-button" id="a-svirpliai" onclick="play('Svirpliai')"></a>
+                    <a class="top-button" id="last-a-top" onclick="play('Chant')"></a>
         </div>
 
         <div class="left-menu menu">
