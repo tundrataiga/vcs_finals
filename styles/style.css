@@ -55,13 +55,18 @@ background-color: #4d4d4d;
   line-height: 130%;
 }
 
-#wrap:hover {
+#a-wrap:hover {
   background-image: url(../images/bubble-wrap.jpg);
   background-size: cover;
 }
 
-#wine:hover {
+#a-wine:hover {
   background-image: url(../images/wine.jpg);
+  background-size: cover;
+}
+
+#a-purr:hover {
+  background-image: url(../images/cat.jpg);
   background-size: cover;
 }
 
@@ -88,11 +93,11 @@ background-color: #4d4d4d;
 }
 
 .top-menu a:hover span.Pievoj:after {
-  content: "Pievoj";
+  content: "Pieva";
 }
 
 .top-menu a:hover span.Rytai:after {
-  content: "Į Rytus";
+  content: "Mongolija";
 }
 
 .left-menu a:hover span.Tom:after {

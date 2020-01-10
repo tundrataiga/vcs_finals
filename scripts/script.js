@@ -147,3 +147,10 @@ $(document).ready(function(){
     audio.pause();
   } 
 };
+
+ //Garsas left menu
+
+ function playOnce(element){
+  var audio = document.getElementById(element);
+   audio.play(); 
+};

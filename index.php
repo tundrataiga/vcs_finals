@@ -61,16 +61,22 @@
         <audio class="top-audio" id="Svirpliai" src="audio/svirpliai.mp3" preload="auto" type="audio/mpeg" loop></audio>
         <audio class="top-audio" id="Chant" src="audio/Chant.mp3" preload="auto" type="audio/mpeg" loop></audio>
                     <a class="top-button active-top-button" id="a-wn" onclick="play('WN')"><span class="Baltas"></span></a>
-                    <a class="top-button" id="a-purr" onclick="play('Purr')"><span class="Motoras"></span></a>
+                    <a class="top-button" id="a-purr" onclick="play('Purr')"></a>
                     <a class="top-button" id="a-svirpliai" onclick="play('Svirpliai')"><span class="Pievoj"></span></a>
                     <a class="top-button" id="last-a-top" onclick="play('Chant')"><span class="Rytai"></span></a>
         </div>
 
         <div class="left-menu menu">
-                    <a id="wine"></a>
-                    <a><span class="Tom"></span></a>
-                    <a id="wrap"></a>
-                    <a id="last-a-left"><span class="Let"></span></a>
+
+        <audio class="left-audio" id="Wine" src="audio/wine.mp3" preload="auto" type="audio/mpeg"></audio>
+        <audio class="left-audio" id="Tom" src="audio/tom.mp3" preload="auto" type="audio/mpeg"></audio>
+        <audio class="left-audio" id="Pop" src="audio/pop.mp3" preload="auto" type="audio/mpeg"></audio>
+        <audio class="left-audio" id="Letgo" src="audio/letgo.mp3" preload="auto" type="audio/mpeg"></audio>
+
+                    <a class="left-button" id="a-wine" onclick="playOnce('Wine')"></a>
+                    <a class="left-button" id="a-tom" onclick="playOnce('Tom')"><span class="Tom"></span></a>
+                    <a class="left-button" id="a-wrap" onclick="playOnce('Pop')"></a>
+                    <a class="left-button" id="last-a-left" onclick="playOnce('Letgo')"><span class="Let"></span></a>
         </div> 
 
           <div id="section-1" class="section-1  section" id="color-bg"></div>
