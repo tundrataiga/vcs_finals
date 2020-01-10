@@ -46,6 +46,16 @@
       
         <div class="scroll">
 
+        <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <h1>Nebelaiko nervai ?</h1> <br> 
+          <h3>&uarr; Pasirink garsinį foną ir aplinką &rarr; <br>
+          &darr; Extra slice of pleasure </h3><br> 
+          Nėra už ką ;)<br> 
+          
+          
+            </div>
+
         <div class="right-menu menu">
                     <a class="right-button active" href="#section-1"></a>
                     <a class="right-button" href="#section-2"></a>

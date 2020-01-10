@@ -22,6 +22,34 @@ body {
   text-align: right;
 }
 
+.alert {
+  padding: 25px;
+  background-color: #4d4d4d;
+  color: white;
+  width: 30%;
+  position: fixed;
+  top: 50%;
+  left: 150px;
+  transform: translate(0,-50%);
+  border-radius: 50px 15px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.alert h1, .alert h3 {
+  margin: 0;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .right-menu {
   position: fixed;
   right: 30px;
@@ -169,6 +197,7 @@ background-color: #4d4d4d;
   overflow: hidden;
   will-change: transform;
   right: 0;
+  
 }
 
 /* Anim */
