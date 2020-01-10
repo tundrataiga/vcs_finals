@@ -49,10 +49,20 @@ background-color: #4d4d4d;
 .top-menu a, .left-menu a {
  -webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
   transition: width 2s, height 2s; 
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
   text-align: center;
   line-height: 130%;
+}
+
+#wrap:hover {
+  background-image: url(../images/bubble-wrap.jpg);
+  background-size: cover;
+}
+
+#wine:hover {
+  background-image: url(../images/wine.jpg);
+  background-size: cover;
 }
 
 .top-menu a:hover, .left-menu a:hover {
@@ -63,13 +73,9 @@ background-color: #4d4d4d;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.top-menu a:hover {
-color: rgb(248, 241, 230);
-position: relative;
-font-family: 'Catamaran', sans-serif;
-
+  color: rgb(248, 241, 230);
+  position: relative;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .top-menu a:hover span.Baltas:after {
@@ -87,6 +93,14 @@ font-family: 'Catamaran', sans-serif;
 
 .top-menu a:hover span.Rytai:after {
   content: "Į Rytus";
+}
+
+.left-menu a:hover span.Tom:after {
+  content: "Tom Hardy";
+}
+
+.left-menu a:hover span.Let:after {
+  content: "Let it go";
 }
 
 .top-menu{

@@ -67,10 +67,10 @@
         </div>
 
         <div class="left-menu menu">
-                    <a></a>
-                    <a></a>
-                    <a></a>
-                    <a id="last-a-left"></a>
+                    <a id="wine"></a>
+                    <a><span class="Tom"></span></a>
+                    <a id="wrap"></a>
+                    <a id="last-a-left"><span class="Let"></span></a>
         </div> 
 
           <div id="section-1" class="section-1  section" id="color-bg"></div>

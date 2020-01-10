@@ -54,7 +54,7 @@ function loop() {   // scroll funkcija
 
 
 
-    if (top > sections[1].offsetTop) { // Jog papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
+/*     if (top > sections[1].offsetTop) { // Jog papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
 
       //console.log(replaceItem[0].querySelector("img"));
 
@@ -66,7 +66,7 @@ function loop() {   // scroll funkcija
       console.log(replaceItem[0].querySelector("img"));
 
       replaceItem[1].querySelector("img").src = "images/lotos_4.png";
-    }
+    } */
 
 /*     if (top > sections[3].offsetTop) { 
 
