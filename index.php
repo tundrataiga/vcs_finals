@@ -24,7 +24,7 @@
             <!-- img aktyvi -->
             <div class="kintamasis  kintamasis-active">
               <div class="kintamasis-content">
-                <div class="lotos"><img src="images/lotos_5.png" alt=""></div>
+                <div class="lotos"><img src="images/lotos.png" alt=""></div>
               </div>
             </div>   
             <!-- img aktyvi/uždaryta -->
@@ -36,28 +36,7 @@
               </div>
             </div>
             <!-- img neaktyvi/uždaryta -->
-
-
-
-
-           <!--  <div class="kintamasis">
-                <div class="kintamasis-content"> 
-                  <div class="logo"><img src="images/lotos_3.png" alt=""></div>
-                </div>
-              </div>
-              <div class="kintamasis">
-                  <div class="kintamasis-content"> 
-                    <div class="logo"><img src="images/lotos_4.png" alt=""></div>
-                  </div>
-                </div> 
-                <div class="kintamasis">
-                    <div class="kintamasis-content"> 
-                      <div class="logo"><img src="images/lotos_5.png" alt=""></div>
-                    </div>
-                  </div>  -->  
             
-            
-
 
            </div> 
           <!-- flip-img konteineris/uždarytas -->
@@ -81,10 +60,10 @@
         <audio class="top-audio" id="Purr" src="audio/PURR.mp3" preload="auto" type="audio/mpeg" loop></audio>
         <audio class="top-audio" id="Svirpliai" src="audio/svirpliai.mp3" preload="auto" type="audio/mpeg" loop></audio>
         <audio class="top-audio" id="Chant" src="audio/Chant.mp3" preload="auto" type="audio/mpeg" loop></audio>
-                    <a class="top-button active-top-button" id="a-wn" onclick="play('WN')"></a>
-                    <a class="top-button" id="a-purr" onclick="play('Purr')"></a>
-                    <a class="top-button" id="a-svirpliai" onclick="play('Svirpliai')"></a>
-                    <a class="top-button" id="last-a-top" onclick="play('Chant')"></a>
+                    <a class="top-button active-top-button" id="a-wn" onclick="play('WN')"><span class="Baltas"></span></a>
+                    <a class="top-button" id="a-purr" onclick="play('Purr')"><span class="Motoras"></span></a>
+                    <a class="top-button" id="a-svirpliai" onclick="play('Svirpliai')"><span class="Pievoj"></span></a>
+                    <a class="top-button" id="last-a-top" onclick="play('Chant')"><span class="Rytai"></span></a>
         </div>
 
         <div class="left-menu menu">
