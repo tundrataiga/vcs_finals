@@ -108,7 +108,7 @@
           <div id="section-4" class="section-4  section section-bg" id="vilnius-bg"></div>
           <div id="section-5" class="section-5  section" id="island-bg"></div> 
 
-          <a href="#"><p id="noHelp">Nepadėjo?</p></a>
+          <a href="nohelp.php"><p id="noHelp">Nepadėjo?</p></a>
       
   
 
