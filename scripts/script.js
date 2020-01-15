@@ -121,27 +121,48 @@ loop();
 
 window.onresize = function (event) {
   loop();
-}; 
+};
 
 
 //Smooth scroll funkcija + active klasė right menu
 
-$(document).ready(function(){
-  $(".right-menu a").on('click', function(event) {
-    $(".right-menu .right-button").removeClass("active");
-    $(this).addClass("active");
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, .scroll').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        window.location.hash = hash;
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+  
+  $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      
+      $('a').each(function () {
+          $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+    
+      var target = this.hash,
+      $target = $(target);
+      $('html, .scroll').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 500, 'swing', function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
       });
-    } 
   });
 });
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop();
+  $('.right-menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.right-menu a').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
+}
 
 //Active class top menu
 
