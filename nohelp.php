@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NebelaikoNervai</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -20,6 +21,7 @@
         <br>
         <p><input type="text" name="data" placeholder="Data" required autofocus></p>
         <p><input type="text" name="miestas" placeholder="Miestas" required autofocus></p>
+        <br>
         <br>
         <p>Prašau atleisti mane iš darbo /čia bus data/ dieną pagal LR DK 127 str. 1d. (savo noru).</p>
         <br>

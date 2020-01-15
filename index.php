@@ -22,7 +22,7 @@
             <div class="kintamasis  kintamasis-active">
               <div class="kintamasis-content">
                 <div class="lotos">
-                  <img src="images/lotos.png" alt="">
+                  <img src="images/lotos.png" alt=""> 
                 </div>
               </div>
             </div>   

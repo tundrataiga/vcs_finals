@@ -1,6 +1,3 @@
-
-// var scroll = window.requestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60) };
-
 window.onscroll = function () {
 
   loop();
@@ -10,56 +7,73 @@ lastSection = false;
 
 function loop() {   // scroll funkcija
 
-  var top = window.pageYOffset; // atstumas px nuo lango viršaus vertikaliai
+  // pozicijų išmatavimas:
 
-  console.log("scroll pozicija", top);
+  var top = window.pageYOffset; // atstumas px nuo lango viršaus vertikaliai (scroll pozicija)
+  var sections = document.querySelectorAll(".section"); // skirtingi fonai
+  var replaceContainer = document.querySelectorAll(".kt-container"); //konteineris, kuriame keičiasi img
+  var replaceItem = document.querySelectorAll(".kintamasis"); // 2 div su img
 
-  var sections = document.querySelectorAll(".section");
-  var replaceContainer = document.querySelectorAll(".kt-container");
-  var replaceItem = document.querySelectorAll(".kintamasis");
+  if (replaceItem.length > 0) { //.length = 2
 
-  if (replaceItem.length > 0) {
+    replaceItemTop = parseInt(replaceContainer[0].getBoundingClientRect().top); //var = konteinerio viršus nuo naršyklės lango viršaus
 
-    // console.log(replaceContainer[0].getBoundingClientRect().top);
-    // console.log(parseInt(replaceContainer[0].getBoundingClientRect().top));
+    replaceItemHeight = replaceItem[0].offsetHeight; // div su img visas aukštis (su padding ir border)
 
-    // console.log("replaceItemTop", parseInt(replaceContainer[0].getBoundingClientRect().top));
-
-    replaceItemTop = parseInt(replaceContainer[0].getBoundingClientRect().top); //konteinerio viršus nuo naršyklės lango viršaus
-
-    //console.log("replaceItemHeight", replaceItem[0].offsetHeight);
-
-    replaceItemHeight = replaceItem[0].offsetHeight; // visas aukštis (su padding ir border)
-
-    // console.log("replaceItemBottom", replaceItemTop + replaceItemHeight);
-
-    replaceItemBottom = replaceItemTop + replaceItemHeight;
+    replaceItemBottom = replaceItemTop + replaceItemHeight; // bottom pozicija = div viršus + visas aukštis
   }
 
   var sectionTop;
   var sectionBottom;
   var currentSection;
 
-  sections.forEach(function (el, i) { // kiekvienam iš .section elementų atskirai leidžiame šitą funkciją
-
-    console.log("elemento pozicija", el.offsetTop);
+  sections.forEach(function (el, i) { // kiekvienam iš .section elementų leidžiame funkciją sužinoti top ir bottom poziciją
 
     sectionTop = parseInt(el.getBoundingClientRect().top);
     sectionBottom = parseInt(el.getBoundingClientRect().bottom);
 
-    // console.log("Section" + i, sectionTop);
-    // console.log("Section" + i, sectionBottom);
+/*     var section1 = $('.section1').offset().top;
+    var section2 = $('.section2').offset().top;
+    var section3 = $('.section3').offset().top;
+    var section4 = $('.section4').offset().top;
+    var section5 = $('.section5').offset().top;
+ 
+    var scrollOffset = 0;
+ 
+    $(window).scroll(function() {  
+  
+    var scroll = $(window).scrollTop() + scrollOffset;  
+  
+ 
+    if ( scroll < 500 ) {
+    $('.lotos img').attr('src', 'images/lotos.png');
+    }
+  
+    if ( scroll > section2 ) {
+    $('.lotos img').attr('src', 'images/lotos_2.png');
+    }
+ 
+    if ( scroll > section3 ) {
+    $('.lotos img').attr('src', 'images/lotos_3.png');
+    }
+ 
+    if ( scroll > section4 ) {
+    $('.lotos img').attr('src', 'images/lotos_4.png');
 
-    console.log("sections[1].offsetTop", sections[1].offsetTop);
+    if ( scroll > section5 ) {
+    $('.lotos img').attr('src', 'images/lotos_5.png');
+    }
+    }
+    }); */
 
 
-
-/*     if (top > sections[1].offsetTop) { // Jog papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
-
-      //console.log(replaceItem[0].querySelector("img"));
+     if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
 
       replaceItem[0].querySelector("img").src = "images/lotos_3.png";
-    }
+
+    }  
+    
+    /*
 
     if (top > sections[2].offsetTop) { // Jog papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
 
@@ -77,9 +91,9 @@ function loop() {   // scroll funkcija
 
 
 
-    if ((sectionTop <= replaceItemBottom) && (sectionBottom > replaceItemTop)) { // aktyvus div.section
+    if ((sectionTop <= replaceItemBottom) && (sectionBottom > replaceItemTop)) { // jei div su img "neperlipa" fono ribų, t.y. yra fono viduj
 
-      currentSection = el.classList.contains('section-bg'); //ar div.section turi klasę
+      currentSection = el.classList.contains('section-bg'); //patikrinam, ar div.section turi klasę
 
       if (currentSection) {  //jei turi
         replaceContainer[0].classList.remove('kintamasis--reverse'); // -klasė
@@ -90,19 +104,18 @@ function loop() {   // scroll funkcija
 
     if ((replaceItemTop < sectionTop) && (sectionTop <= replaceItemBottom)) { // jei img "perlipa" foną
 
-      // console.log("currentSection", currentSection);
-      // console.log("lastSection", lastSection);
-
-      if (currentSection != lastSection) { // animuoti jei keičiasi fonas
+      if (currentSection != lastSection) { // animuoti jei fonas keičiasi į foną su .section-bg klase
         document.documentElement.style.setProperty('--replace-offset', 100 / replaceItemHeight * parseInt(sectionTop - replaceItemTop) + '%'); // Formulė reikalauja korekcijos
       }
     }
-    if (replaceItemTop >= sectionTop) { // kai "perlipa"
+    if (replaceItemTop >= sectionTop) { // jei img viršus yra aukščiau už fono viršų
       document.documentElement.style.setProperty('--replace-offset', 0 + '%');
       lastSection = currentSection;
     }
   });
 }
+
+
 
 loop();
 
@@ -111,7 +124,8 @@ window.onresize = function (event) {
 }; 
 
 
-//smooth scroll
+//Smooth scroll funkcija
+
 $(document).ready(function(){
   $(".right-menu a").on('click', function(event) {
     $(".right-menu .right-button").removeClass("active");

@@ -134,14 +134,15 @@ body {
   flex-direction: column; 
 }
 
-.right-menu a, .top-menu a, .left-menu a {
+.menu a {
   width: 25px;
   height: 25px;
   border: 2px solid #4d4d4d;
   border-radius: 50%;
   margin: 0 0 10px 0;
-  cursor: pointer;
+  overflow: hidden;
 } 
+
 .top-menu a {
   display: inline;
   margin: 0 10px 0 0;
@@ -223,7 +224,31 @@ body {
   background-size: cover; 
 }
 
-.section-1 {background-image: linear-gradient(to right, #ffdde1 , #ee9ca7);}
+.section-1 {
+  background: linear-gradient(270deg, #ffdde1, #ee9ca7);
+  background-size: 400% 400%;
+  
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 .section-2 {background-image: url(../images/space.jpg);}
 .section-3 {background-image: url(../images/antarctica.jpg);}
 .section-4 {background-image: url(../images/vilnius.jpg);}
@@ -258,11 +283,9 @@ body {
 
 .form p {
   margin: 10px 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.form select {
-  display: inline;
-}
 
 
 
