@@ -67,20 +67,20 @@ function loop() {   // scroll funkcija
     }); */
 
 
-     if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
+/*      if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
 
       replaceItem[0].querySelector("img").src = "images/lotos_3.png";
 
     }  
     
-    /*
+    
 
-    if (top > sections[2].offsetTop) { // Jog papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
+    if (top > sections[2].offsetTop) {
 
       console.log(replaceItem[0].querySelector("img"));
 
       replaceItem[1].querySelector("img").src = "images/lotos_4.png";
-    } */
+    }  */
 
 /*     if (top > sections[3].offsetTop) { 
 
@@ -124,7 +124,7 @@ window.onresize = function (event) {
 }; 
 
 
-//Smooth scroll funkcija
+//Smooth scroll funkcija + active klasė right menu
 
 $(document).ready(function(){
   $(".right-menu a").on('click', function(event) {
@@ -143,13 +143,13 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $(".top-menu a").on('click', function(event) {
-    $(".top-menu .top-button").removeClass("top-menu-active");
-    $(this).addClass("top-menu-active");
+//Active class top menu
 
+    $(document).ready(function() {
+      $(".top-menu a").on("click", function() {
+          $(this).toggleClass("active");
+      });
   });
-});
 
  //Garsas top menu
 
@@ -167,4 +167,7 @@ $(document).ready(function(){
  function playOnce(element){
   var audio = document.getElementById(element);
    audio.play(); 
-};
+}; 
+
+
+

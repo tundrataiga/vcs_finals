@@ -115,7 +115,7 @@ body {
   flex-direction: column;
 }
 
-.right-menu .active {
+.right-menu .active, .top-menu .active {
  background-color: #4d4d4d;
 }
 
