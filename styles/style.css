@@ -189,6 +189,13 @@ body {
   font-family: 'Catamaran', sans-serif;
 }
 
+.top-menu a:hover::before, .left-menu a:hover::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .top-menu a:hover span.Baltas:after {
   content: "Baltas triukšmas";
 }
