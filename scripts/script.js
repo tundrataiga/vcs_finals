@@ -67,28 +67,22 @@ function loop() {   // scroll funkcija
     }); */
 
 
-/*      if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
+ if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
 
       replaceItem[0].querySelector("img").src = "images/lotos_3.png";
 
     }  
     
-    
 
     if (top > sections[2].offsetTop) {
 
-      console.log(replaceItem[0].querySelector("img"));
+      replaceItem[0].querySelector("img").src = "images/lotos_4.png";
+    }  
 
-      replaceItem[1].querySelector("img").src = "images/lotos_4.png";
-    }  */
+    if (top > sections[3].offsetTop) { 
 
-/*     if (top > sections[3].offsetTop) { 
-
-      console.log(replaceItem[0].querySelector("img"));
-
-      replaceItem[2].querySelector("img").src = "images/lotos_5.png";
-    } */
-
+      replaceItem[0].querySelector("img").src = "images/lotos_5.png";
+    } 
 
 
     if ((sectionTop <= replaceItemBottom) && (sectionBottom > replaceItemTop)) { // jei div su img "neperlipa" fono ribų, t.y. yra fono viduj
@@ -122,7 +116,6 @@ loop();
 window.onresize = function (event) {
   loop();
 };
-
 
 //Smooth scroll funkcija + active klasė right menu
 
