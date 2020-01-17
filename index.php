@@ -18,28 +18,65 @@
           <!-- flip-img konteineris -->
            <div class="kt-container"> 
 
-            <!-- img aktyvi -->
+          <!-- img red -->
             <div class="kintamasis  kintamasis-active">
-              <div class="kintamasis-content">
-                <div class="lotos">
-                  <img src="images/lotos.png" alt=""> 
-                </div>
-              </div>
-            </div>   
-            <!-- img aktyvi/uždaryta -->
-           
-            <!-- img neaktyvi -->
-             <div class="kintamasis">
               <div class="kintamasis-content"> 
                 <div class="lotos">
-                  <img id="img" src="images/lotos_2.png" alt="">
+                  <img id="img5" src="images/lotos_5.png" alt="">
                 </div>
               </div>
             </div>
-            <!-- img neaktyvi/uždaryta -->
-            
+            <!-- img red uždaryta -->
 
-           </div> 
+          <!-- img rose -->
+            <div class="kintamasis  kintamasis-active">
+              <div class="kintamasis-content"> 
+                <div class="lotos">
+                  <img id="img3" src="images/lotos_3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- img rose uždaryta -->
+
+            <!-- img grey -->
+            <div class="kintamasis  kintamasis-active">
+              <div class="kintamasis-content">
+                <div class="lotos">
+                  <img id="img" src="images/lotos.png" alt=""> 
+                </div>
+              </div>
+            </div>   
+            <!-- img grey uždaryta -->
+
+
+
+
+
+
+
+
+            <!-- img light rose -->
+              <div class="kintamasis">
+              <div class="kintamasis-content"> 
+                <div class="lotos">
+                  <img id="img4" src="images/lotos_4.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- img light rose uždaryta -->
+
+
+            <!-- img yellow -->
+              <div class="kintamasis">
+              <div class="kintamasis-content"> 
+                <div class="lotos">
+                  <img id="img2" src="images/lotos_2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- img yellow uždaryta -->
+
+           </div>
           <!-- flip-img konteineris/uždarytas -->
 
 
@@ -105,7 +142,7 @@
           <div id="section-1" class="section-1  section" id="color-bg"></div>
           <div id="section-2" class="section-2  section  section-bg" id="space-bg"></div>
           <div id="section-3" class="section-3  section" id="antarctica-bg"></div>
-          <div id="section-4" class="section-4  section section-bg" id="vilnius-bg"></div>
+          <div id="section-4" class="section-4  section  section-bg" id="vilnius-bg"></div>
           <div id="section-5" class="section-5  section" id="island-bg"></div> 
 
           <a href="nohelp.php"><p id="noHelp">Nepadėjo?</p></a>

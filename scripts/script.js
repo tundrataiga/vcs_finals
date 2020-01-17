@@ -67,14 +67,38 @@ function loop() {   // scroll funkcija
     }); */
 
 
- if (top > sections[1].offsetTop) { // Papildomai reikia padaryti kad nuotrauka ir atsikeistų paskrolinus atgal į viršų
+// Img keitimas
 
-      replaceItem[0].querySelector("img").src = "images/lotos_3.png";
+   if (top > sections[1].offsetTop) { 
 
-    }  
-    
+      document.getElementById("img").style.visibility = "hidden";
 
-    if (top > sections[2].offsetTop) {
+    }  else {
+      document.getElementById("img").style.visibility = "visible";
+    }
+
+    if (top > sections[2].offsetTop) { 
+
+      document.getElementById("img2").style.visibility = "hidden";
+
+    } else {
+      document.getElementById("img2").style.visibility = "visible";
+    }
+
+    if (top > sections[3].offsetTop) { 
+
+      document.getElementById("img3").style.visibility = "hidden";
+
+    }  else {
+      document.getElementById("img3").style.visibility = "visible";
+    }
+/*    
+  if (top > sections[2].offsetTop) {
+    if (currentSection) {  //jei turi
+      replaceContainer[0].classList.remove('kintamasis--reverse'); // -klasė
+    } else {
+      replaceContainer[0].classList.add('kintamasis--reverse'); // +klasė
+    }
 
       replaceItem[0].querySelector("img").src = "images/lotos_4.png";
     }  
@@ -82,7 +106,7 @@ function loop() {   // scroll funkcija
     if (top > sections[3].offsetTop) { 
 
       replaceItem[0].querySelector("img").src = "images/lotos_5.png";
-    } 
+    }   */
 
 
     if ((sectionTop <= replaceItemBottom) && (sectionBottom > replaceItemTop)) { // jei div su img "neperlipa" fono ribų, t.y. yra fono viduj
@@ -94,13 +118,15 @@ function loop() {   // scroll funkcija
       } else {
         replaceContainer[0].classList.add('kintamasis--reverse'); // +klasė
       }
+
     }
+
 
     if ((replaceItemTop < sectionTop) && (sectionTop <= replaceItemBottom)) { // jei img "perlipa" foną
 
-      if (currentSection != lastSection) { // animuoti jei fonas keičiasi į foną su .section-bg klase
+       if (currentSection != lastSection) { // animuoti jei fonas keičiasi į foną su .section-bg klase
         document.documentElement.style.setProperty('--replace-offset', 100 / replaceItemHeight * parseInt(sectionTop - replaceItemTop) + '%'); // Formulė reikalauja korekcijos
-      }
+      } 
     }
     if (replaceItemTop >= sectionTop) { // jei img viršus yra aukščiau už fono viršų
       document.documentElement.style.setProperty('--replace-offset', 0 + '%');
