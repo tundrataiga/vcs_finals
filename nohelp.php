@@ -14,6 +14,8 @@
     <div class="container">
         <br>
         <br>
+        <br>
+        <br>
         <p class="coned" contenteditable="true" spellcheck="false">Mano pareigos</p>
         <p class="coned" contenteditable="true" spellcheck="false">Stresas Nebedarbauskas</p>
         <br>
@@ -27,13 +29,13 @@
         <br>
         <br>
         <br>
-        <p class="coned" contenteditable="true" spellcheck="false">ex.bosui@visogero.com</p>
+        <p class="coned no-print" contenteditable="true" spellcheck="false">ex.bosui@visogero.com</p>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <div class="buttons">
+        <div class="buttons no-print">
         <div id="print" class='action-button tooltip'><span class="tooltiptext">Spausdinti</span></div>
         <div id="send" class='action-button tooltip'><span class="tooltiptext">Siųsti</span></div>
         <div id="save" class='action-button tooltip'><span class="tooltiptext">Saugoti</span></div>

@@ -244,3 +244,13 @@ function onScroll(event){
   var audio = document.getElementById(element);
    audio.play(); 
 }; 
+
+ //Print button
+
+var printer = document.getElementById("print");
+
+function printPage() {
+  window.print();
+}
+
+printer.addEventListener("click", printPage);
