@@ -17,7 +17,7 @@
         <p class="coned" contenteditable="true" spellcheck="false">Mano pareigos</p>
         <p class="coned" contenteditable="true" spellcheck="false">Stresas Nebedarbauskas</p>
         <br>
-        <h2>PRAŠYMAS</h2>
+        <h1>PRAŠYMAS</h1>
         <br>
         <p class="coned" contenteditable="true" spellcheck="false">Data</p>
         <p class="coned" contenteditable="true" spellcheck="false">Miestas</p>
