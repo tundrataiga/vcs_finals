@@ -59,7 +59,6 @@ function loop() {   // scroll funkcija
  
     if ( scroll > section4 ) {
     $('.lotos img').attr('src', 'images/lotos_4.png');
-
     if ( scroll > section5 ) {
     $('.lotos img').attr('src', 'images/lotos_5.png');
     }
@@ -69,28 +68,64 @@ function loop() {   // scroll funkcija
 
 // Img keitimas
 
-   if (top > sections[1].offsetTop) { 
+/* if (top >= sections[0].offsetTop && (sections[0].offsetTop < sections[1].offsetTop)) { 
+  //document.getElementsById("alotos").style.visibility = "hidden";
+  document.getElementById("img3").style.visibility = "hidden";
+  document.getElementById("r-menu3").style.visibility = "hidden";
+  document.getElementById("t-menu3").style.visibility = "hidden";
+  document.getElementById("noHelp3").style.visibility = "hidden";
 
-      document.getElementById("img").style.visibility = "hidden";
+}  else {
+  //document.getElementsById("alotos").style.visibility = "visible";
+  document.getElementById("img3").style.visibility = "visible";
+  document.getElementById("r-menu3").style.visibility = "visible";
+  document.getElementById("t-menu3").style.visibility = "visible";
+  document.getElementById("noHelp3").style.visibility = "visible";
+} */
+
+   if (top > sections[1].offsetTop) { 
+      //document.getElementsById("alotos").style.visibility = "hidden";
+      document.getElementById("img").style.opacity = "0";
+      document.getElementById("r-menu").style.opacity = "0";
+      document.getElementById("t-menu").style.opacity = "0";
+      document.getElementById("noHelp").style.opacity = "0";
 
     }  else {
-      document.getElementById("img").style.visibility = "visible";
+      //document.getElementsById("alotos").style.visibility = "visible";
+      document.getElementById("img").style.opacity = "1";
+      document.getElementById("r-menu").style.opacity = "1";
+      document.getElementById("t-menu").style.opacity = "1";
+      document.getElementById("noHelp").style.opacity = "1";
     }
 
     if (top > sections[2].offsetTop) { 
-
-      document.getElementById("img2").style.visibility = "hidden";
+      //document.getElementsById("alotos2").style.visibility = "hidden";
+      document.getElementById("img2").style.opacity = "0";
+      document.getElementById("r-menu2").style.opacity = "0";
+      document.getElementById("t-menu2").style.opacity = "0";
+      document.getElementById("noHelp2").style.opacity = "0";
 
     } else {
-      document.getElementById("img2").style.visibility = "visible";
+      //document.getElementsById("alotos2").style.visibility = "visible";
+      document.getElementById("img2").style.opacity = "1";
+      document.getElementById("r-menu2").style.opacity = "1";
+      document.getElementById("t-menu2").style.opacity = "1";
+      document.getElementById("noHelp2").style.opacity = "1";
     }
 
     if (top > sections[3].offsetTop) { 
-
-      document.getElementById("img3").style.visibility = "hidden";
+      //document.getElementsById("alotos3").style.visibility = "hidden";
+      document.getElementById("img3").style.opacity = "0";
+      document.getElementById("r-menu3").style.opacity = "0";
+      document.getElementById("t-menu3").style.opacity = "0";
+      document.getElementById("noHelp3").style.opacity = "0";
 
     }  else {
-      document.getElementById("img3").style.visibility = "visible";
+      //document.getElementsById("alotos3").style.visibility = "visible";
+      document.getElementById("img3").style.opacity = "1";
+      document.getElementById("r-menu3").style.opacity = "1";
+      document.getElementById("t-menu3").style.opacity = "1";
+      document.getElementById("noHelp3").style.opacity = "1";
     }
 /*    
   if (top > sections[2].offsetTop) {
@@ -99,12 +134,9 @@ function loop() {   // scroll funkcija
     } else {
       replaceContainer[0].classList.add('kintamasis--reverse'); // +klasė
     }
-
       replaceItem[0].querySelector("img").src = "images/lotos_4.png";
     }  
-
     if (top > sections[3].offsetTop) { 
-
       replaceItem[0].querySelector("img").src = "images/lotos_5.png";
     }   */
 
@@ -155,7 +187,11 @@ $(document).ready(function () {
       $('a').each(function () {
           $(this).removeClass('active');
       })
-      $(this).addClass('active');
+      // $(this).addClass('active');
+
+      var aNumber = $(this).attr("data-number");
+
+      $("a[data-number=" + aNumber + "]").addClass("active");
     
       var target = this.hash,
       $target = $(target);
@@ -208,6 +244,3 @@ function onScroll(event){
   var audio = document.getElementById(element);
    audio.play(); 
 }; 
-
-
-

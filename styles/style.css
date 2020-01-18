@@ -15,8 +15,8 @@ body {
 
 .fixed-frame {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   text-align: right;
@@ -26,6 +26,7 @@ body {
 
 .kt-container {
   display: grid;
+  height: 100,2vh;
 }
 
 .kintamasis {
@@ -116,9 +117,13 @@ body {
   flex-direction: column;
 }
 
-.right-menu .active, .top-menu .active {
+.top-menu .active {
  background-color: #4d4d4d;
 }
+
+.right-menu .active {
+  background-color: #4d4d4d;
+ }
 
 .top-menu{
   position: fixed;
@@ -138,11 +143,22 @@ body {
 .menu a {
   width: 25px;
   height: 25px;
-  border: 2px solid #4d4d4d;
+  border-color: transparent;
+  border: 2px solid;
   border-radius: 50%;
   margin: 0 0 10px 0;
   overflow: hidden;
 } 
+
+#t-menu a, #r-menu a{border-color: #4d4d4d;}
+
+#t-menu2 a, #r-menu2 a{border: 2px solid #ede7a9;}
+
+#t-menu3 a, #r-menu3 a{border: 2px solid #ba418b;}
+
+#t-menu4 a, #r-menu4 a{border: 2px solid #ec55b3;}
+
+#t-menu5 a, #r-menu5 a{border: 2px solid #f1574d;}
 
 .top-menu a {
   display: inline;
@@ -189,7 +205,7 @@ body {
   position: relative;
   font-family: 'Catamaran', sans-serif;
   cursor: pointer;
-}
+} 
 
 .top-menu a:hover::before, .left-menu a:hover::before {
   content: " ";
@@ -224,7 +240,8 @@ body {
 }
 
 .lotos img {
-  width: 60%;
+  width: auto;
+  height: 100vh;
 }
 
 .section {
@@ -234,7 +251,7 @@ body {
   background-size: cover; 
 }
 
-.section-1 {
+.section-1, .body {
   background: linear-gradient(270deg, #ffdde1, #ee9ca7);
   background-size: 400% 400%;
   
@@ -264,39 +281,90 @@ body {
 .section-4 {background-image: url(../images/vilnius.jpg);}
 .section-5 {background-image: url(../images/faraway.jpg);}
 
-#noHelp {
+#noHelp, #noHelp2, #noHelp3, #noHelp4, #noHelp5 {
   position: fixed;
   font-family: 'Catamaran', sans-serif;
-  color: #4d4d4d;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
   margin: 0;
 }
 
+#noHelp {color: #4d4d4d;}
+
+#noHelp2 {color: #ede7a9;}
+
+#noHelp3 {color: #ba418b;}
+
+#noHelp4 {color: #ec55b3;}
+
+#noHelp5 {color: #f1574d;}
+
+
+
+
 /* nohelp.php file */
 
 .body {
-  background-color: #ffdde1;
-}
+  margin: 0;
+  }
 
 .container {
   background-color: rgb(245, 245, 241);
   width: 70%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   padding: 30px;
   text-align: center;
 }
 
-.form p {
-  margin: 10px 0 10px 0;
+.container p, .container h2 {
+  margin: 20px 0 20px 0;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #272626;
 }
 
+.container h2 {
+  letter-spacing: 3px;
+}
 
+.coned {
+  text-decoration: underline dotted #ba418b;;
+}
 
+.coned:focus {
+  outline: 0px solid transparent;
+}
 
+.buttons{
+  display: flex;
+  justify-content: center;
+}
 
+.action-button {
+  width: 60px;
+  height: 60px;
+	border: 2px solid #ee9ca7;
+	padding: 20px;
+	background: whitesmoke;
+	border-radius: 50%;
+  cursor: pointer;
+  margin: 7px;
+}
+
+#print {
+  background-image: url(../images/print.png);
+  background-size: cover;
+}
+
+#send {
+  background-image: url(../images/send.jpg);
+  background-size: cover;
+}
+
+#save {
+  background-image: url(../images/save.png);
+  background-size: cover;
+}
