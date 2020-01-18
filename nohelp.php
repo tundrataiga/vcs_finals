@@ -7,6 +7,7 @@
     <title>NebelaikoNervai</title>
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -29,13 +30,13 @@
         <br>
         <br>
         <br>
-        <p class="coned no-print" contenteditable="true" spellcheck="false">ex.bosui@visogero.com</p>
+        <p id="boss-email" class="coned" contenteditable="true" spellcheck="false">ex.bosui@visogero.com</p>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <div class="buttons no-print">
+        <div class="buttons">
         <div id="print" class='action-button tooltip'><span class="tooltiptext">Spausdinti</span></div>
         <div id="send" class='action-button tooltip'><span class="tooltiptext">Siųsti</span></div>
         <div id="save" class='action-button tooltip'><span class="tooltiptext">Saugoti</span></div>

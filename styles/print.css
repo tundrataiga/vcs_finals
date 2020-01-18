@@ -1,0 +1,102 @@
+.body {
+  margin: 0;
+  }
+
+.container {
+  background-color: rgb(245, 245, 241);
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+}
+
+.container p, .container h1 {
+  margin: 20px 0 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #272626;
+}
+
+.container h1 {
+  letter-spacing: 3px;
+}
+
+.container p {
+  font-size: 17px;
+}
+
+.coned {
+  text-decoration: none;
+}
+
+.coned:focus {
+  outline: 0px solid transparent;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.action-button {
+  width: 60px;
+  height: 60px;
+	border: 2px solid #ee9ca7;
+	padding: 20px;
+	background: whitesmoke;
+	border-radius: 50%;
+  cursor: pointer;
+  margin: 7px;
+}
+
+#print {
+  background-image: url(../images/print.png);
+  background-size: cover;
+}
+
+#send {
+  background-image: url(../images/send.jpg);
+  background-size: cover;
+}
+
+#save {
+  background-image: url(../images/save.jpg);
+  background-size: cover;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #4d4d4d;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 115%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: hidden;
+  opacity: 1;
+}
+
+#boss-email {
+  visibility: hidden;
+}

@@ -252,5 +252,4 @@ var printer = document.getElementById("print");
 function printPage() {
   window.print();
 }
-
 printer.addEventListener("click", printPage);
