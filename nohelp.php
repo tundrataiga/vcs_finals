@@ -34,9 +34,9 @@
         <br>
         <br>
         <div class="buttons">
-        <div id="print" class='action-button'></div>
-        <div id="send" class='action-button'></div>
-        <div id="save" class='action-button'></div>
+        <div id="print" class='action-button tooltip'><span class="tooltiptext">Spausdinti</span></div>
+        <div id="send" class='action-button tooltip'><span class="tooltiptext">Siųsti</span></div>
+        <div id="save" class='action-button tooltip'><span class="tooltiptext">Saugoti</span></div>
         </div>
         <br>
         <br>
