@@ -26,7 +26,6 @@ body {
 
 .kt-container {
   display: grid;
-  height: 100,2vh;
 }
 
 .kintamasis {
@@ -117,13 +116,9 @@ body {
   flex-direction: column;
 }
 
-.top-menu .active {
- background-color: #4d4d4d;
+.top-menu .active, .right-menu .active {
+ background-color: #cdb599;
 }
-
-.right-menu .active {
-  background-color: #4d4d4d;
- }
 
 .top-menu{
   position: fixed;
@@ -143,22 +138,11 @@ body {
 .menu a {
   width: 25px;
   height: 25px;
-  border-color: transparent;
-  border: 2px solid;
+  border: 2px solid #cdb599;
   border-radius: 50%;
   margin: 0 0 10px 0;
   overflow: hidden;
 } 
-
-#t-menu a, #r-menu a{border-color: #4d4d4d;}
-
-#t-menu2 a, #r-menu2 a{border: 2px solid #ede7a9;}
-
-#t-menu3 a, #r-menu3 a{border: 2px solid #ba418b;}
-
-#t-menu4 a, #r-menu4 a{border: 2px solid #ec55b3;}
-
-#t-menu5 a, #r-menu5 a{border: 2px solid #f1574d;}
 
 .top-menu a {
   display: inline;
@@ -240,8 +224,7 @@ body {
 }
 
 .lotos img {
-  width: auto;
-  height: 100vh;
+  width: 60%;
 }
 
 .section {
@@ -252,7 +235,7 @@ body {
 }
 
 .section-1, .body {
-  background: linear-gradient(270deg, #ffdde1, #ee9ca7);
+  background: linear-gradient(270deg, #00203FFF, rgb(141, 196, 171));
   background-size: 400% 400%;
   
   -webkit-animation: AnimationName 30s ease infinite;
@@ -281,26 +264,14 @@ body {
 .section-4 {background-image: url(../images/vilnius.jpg);}
 .section-5 {background-image: url(../images/faraway.jpg);}
 
-#noHelp, #noHelp2, #noHelp3, #noHelp4, #noHelp5 {
+#noHelp {
   position: fixed;
   font-family: 'Catamaran', sans-serif;
-  bottom: 20px;
+  bottom: 30px;
   right: 30px;
   margin: 0;
+  color: #cdb599;
 }
-
-#noHelp {color: #4d4d4d;}
-
-#noHelp2 {color: #ede7a9;}
-
-#noHelp3 {color: #ba418b;}
-
-#noHelp4 {color: #ec55b3;}
-
-#noHelp5 {color: #f1574d;}
-
-
-
 
 /* nohelp.php file */
 
@@ -317,6 +288,8 @@ body {
   position: relative;
   padding: 30px;
   text-align: center;
+  border-right: 7px solid white;
+  border-left: 7px solid white;
 }
 
 .container p, .container h1 {

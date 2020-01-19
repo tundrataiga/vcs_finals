@@ -32,113 +32,33 @@ function loop() {   // scroll funkcija
     sectionTop = parseInt(el.getBoundingClientRect().top);
     sectionBottom = parseInt(el.getBoundingClientRect().bottom);
 
-/*     var section1 = $('.section1').offset().top;
-    var section2 = $('.section2').offset().top;
-    var section3 = $('.section3').offset().top;
-    var section4 = $('.section4').offset().top;
-    var section5 = $('.section5').offset().top;
- 
-    var scrollOffset = 0;
- 
-    $(window).scroll(function() {  
-  
-    var scroll = $(window).scrollTop() + scrollOffset;  
-  
- 
-    if ( scroll < 500 ) {
-    $('.lotos img').attr('src', 'images/lotos.png');
-    }
-  
-    if ( scroll > section2 ) {
-    $('.lotos img').attr('src', 'images/lotos_2.png');
-    }
- 
-    if ( scroll > section3 ) {
-    $('.lotos img').attr('src', 'images/lotos_3.png');
-    }
- 
-    if ( scroll > section4 ) {
-    $('.lotos img').attr('src', 'images/lotos_4.png');
-    if ( scroll > section5 ) {
-    $('.lotos img').attr('src', 'images/lotos_5.png');
-    }
-    }
-    }); */
-
 
 // Img keitimas
 
-/* if (top >= sections[0].offsetTop && (sections[0].offsetTop < sections[1].offsetTop)) { 
-  //document.getElementsById("alotos").style.visibility = "hidden";
-  document.getElementById("img3").style.visibility = "hidden";
-  document.getElementById("r-menu3").style.visibility = "hidden";
-  document.getElementById("t-menu3").style.visibility = "hidden";
-  document.getElementById("noHelp3").style.visibility = "hidden";
+if (top > sections[1].offsetTop) { 
+
+  document.getElementById("img").style.visibility = "hidden";
 
 }  else {
-  //document.getElementsById("alotos").style.visibility = "visible";
+  document.getElementById("img").style.visibility = "visible";
+}
+
+if (top > sections[2].offsetTop) { 
+
+  document.getElementById("img2").style.visibility = "hidden";
+
+} else {
+  document.getElementById("img2").style.visibility = "visible";
+}
+
+if (top > sections[3].offsetTop) { 
+
+  document.getElementById("img3").style.visibility = "hidden";
+
+}  else {
   document.getElementById("img3").style.visibility = "visible";
-  document.getElementById("r-menu3").style.visibility = "visible";
-  document.getElementById("t-menu3").style.visibility = "visible";
-  document.getElementById("noHelp3").style.visibility = "visible";
-} */
+}
 
-   if (top > sections[1].offsetTop) { 
-      //document.getElementsById("alotos").style.visibility = "hidden";
-      document.getElementById("img").style.opacity = "0";
-      document.getElementById("r-menu").style.opacity = "0";
-      document.getElementById("t-menu").style.opacity = "0";
-      document.getElementById("noHelp").style.opacity = "0";
-
-    }  else {
-      //document.getElementsById("alotos").style.visibility = "visible";
-      document.getElementById("img").style.opacity = "1";
-      document.getElementById("r-menu").style.opacity = "1";
-      document.getElementById("t-menu").style.opacity = "1";
-      document.getElementById("noHelp").style.opacity = "1";
-    }
-
-    if (top > sections[2].offsetTop) { 
-      //document.getElementsById("alotos2").style.visibility = "hidden";
-      document.getElementById("img2").style.opacity = "0";
-      document.getElementById("r-menu2").style.opacity = "0";
-      document.getElementById("t-menu2").style.opacity = "0";
-      document.getElementById("noHelp2").style.opacity = "0";
-
-    } else {
-      //document.getElementsById("alotos2").style.visibility = "visible";
-      document.getElementById("img2").style.opacity = "1";
-      document.getElementById("r-menu2").style.opacity = "1";
-      document.getElementById("t-menu2").style.opacity = "1";
-      document.getElementById("noHelp2").style.opacity = "1";
-    }
-
-    if (top > sections[3].offsetTop) { 
-      //document.getElementsById("alotos3").style.visibility = "hidden";
-      document.getElementById("img3").style.opacity = "0";
-      document.getElementById("r-menu3").style.opacity = "0";
-      document.getElementById("t-menu3").style.opacity = "0";
-      document.getElementById("noHelp3").style.opacity = "0";
-
-    }  else {
-      //document.getElementsById("alotos3").style.visibility = "visible";
-      document.getElementById("img3").style.opacity = "1";
-      document.getElementById("r-menu3").style.opacity = "1";
-      document.getElementById("t-menu3").style.opacity = "1";
-      document.getElementById("noHelp3").style.opacity = "1";
-    }
-/*    
-  if (top > sections[2].offsetTop) {
-    if (currentSection) {  //jei turi
-      replaceContainer[0].classList.remove('kintamasis--reverse'); // -klasė
-    } else {
-      replaceContainer[0].classList.add('kintamasis--reverse'); // +klasė
-    }
-      replaceItem[0].querySelector("img").src = "images/lotos_4.png";
-    }  
-    if (top > sections[3].offsetTop) { 
-      replaceItem[0].querySelector("img").src = "images/lotos_5.png";
-    }   */
 
 
     if ((sectionTop <= replaceItemBottom) && (sectionBottom > replaceItemTop)) { // jei div su img "neperlipa" fono ribų, t.y. yra fono viduj
@@ -177,6 +97,7 @@ window.onresize = function (event) {
 
 //Smooth scroll funkcija + active klasė right menu
 
+
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
   
@@ -187,11 +108,7 @@ $(document).ready(function () {
       $('a').each(function () {
           $(this).removeClass('active');
       })
-      // $(this).addClass('active');
-
-      var aNumber = $(this).attr("data-number");
-
-      $("a[data-number=" + aNumber + "]").addClass("active");
+      $(this).addClass('active');
     
       var target = this.hash,
       $target = $(target);
@@ -218,6 +135,8 @@ function onScroll(event){
       }
   });
 }
+
+
 
 //Active class top menu
 
