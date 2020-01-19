@@ -253,3 +253,10 @@ function printPage() {
   window.print();
 }
 printer.addEventListener("click", printPage);
+
+ //Send button
+
+ function myFunction() {
+  document.getElementById("alert2").style.display = "block";
+    
+}

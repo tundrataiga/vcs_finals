@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 
 <body class="body">
-    <div class="container">
+    <div id="element-to-print" class="container">
         <br>
         <br>
         <br>
@@ -37,13 +38,20 @@
         <br>
         <br>
         <div class="buttons">
-        <div id="print" class='action-button tooltip'><span class="tooltiptext">Spausdinti</span></div>
-        <div id="send" class='action-button tooltip'><span class="tooltiptext">Siųsti</span></div>
+        <div id="print" class="action-button tooltip"><span class="tooltiptext">Spausdinti</span></div>
+        <div id="send" class="action-button tooltip" onclick="myFunction()" ><span class="tooltiptext">Siųsti</span></div>
         <div id="save" class='action-button tooltip'><span class="tooltiptext">Saugoti</span></div>
         </div>
         <br>
         <br>
         <br>
+        <div id="alert2" class="alert2">
+        <span class="closebtn2" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong class="ikvepk alert-text">Įkvėpk~</strong><br>
+        <strong class="alert-text">Iškvėpk~</strong><br>
+        <strong class="ikvepk alert-text">Įkvėpk~</strong><br>
+        <strong class="alert-text">Dar pagalvok!</strong>
+        </div>
 
     </div>
 

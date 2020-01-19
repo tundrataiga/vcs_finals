@@ -401,3 +401,41 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+.alert2 {
+  padding: 20px;
+  background-color: #ee9ca7;
+  color: rgb(245, 245, 241);
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  border-radius: 8px;
+  text-align: start;
+  border: 2px solid #4d4d4d;
+  display: none;
+}
+
+.closebtn2 {
+  margin-left: 15px;
+  color: #4d4d4d;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.ikvepk {
+  color: white;
+}
+
+.alert-text {
+  font-size: 20px;
+}
