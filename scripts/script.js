@@ -35,6 +35,7 @@ function loop() {   // scroll funkcija
 
 // Img keitimas
 
+
 if (top > sections[1].offsetTop) { 
 
   document.getElementById("img").style.visibility = "hidden";
