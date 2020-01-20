@@ -33,7 +33,7 @@ function loop() {   // scroll funkcija
     sectionBottom = parseInt(el.getBoundingClientRect().bottom);
 
 
-// Img keitimas
+// Img keitimas scrollinant
 
 
 if (top > sections[1].offsetTop) { 
@@ -137,8 +137,6 @@ function onScroll(event){
   });
 }
 
-
-
 //Active class top menu
 
     $(document).ready(function() {
@@ -146,6 +144,7 @@ function onScroll(event){
           $(this).toggleClass("active");
       });
   });
+  
 
  //Garsas top menu
 
